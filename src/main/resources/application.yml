@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: hystrix-turbine
+server:
+  port: 7979
+turbine:
+  stream:
+    port: 8989
