@@ -1,6 +1,8 @@
 spring:
   application:
     name: hystrix-turbine
+  rabbitmq:
+    host: rabbitmq
 server:
   port: 7979
 turbine:
