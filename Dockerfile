@@ -7,4 +7,4 @@ WORKDIR /app/
 RUN mvn package -DskipTests
 VOLUME /config
 WORKDIR /
-CMD java -Djava.security.egd=file:/dev/./urandom -jar /app/target/hystrix-turbine-*.jar --server.port=7979 --turbine.stream.port=8989 --spring.config.name=application
+CMD java -Dspring.profiles.active=docker -Djava.security.egd=file:/dev/./urandom -jar /app/target/hystrix-turbine-*.jar --server.port=7979 --turbine.stream.port=8989 --spring.config.name=application
